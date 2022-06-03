@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links</title>
+    <style>
+      a {
+        text-decoration: none;
+        color: chartreuse;
+        font-weight: bold;
+      }
+      a:visited {
+        color: brown;
+      }
+      a:hover::after {
+        text-decoration: none;
+      }
+
+      .especial::after {
+        content: '  [link]';
+        color: beige;
+      }
+      a:hover {
+        background-color: aquamarine;
+        text-decoration: underline;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Personalizando Links</h1>
+    <ul>
+      <li>
+        <a href="https//github.com/session" target="blank" class="especial"
+          >Resositorio GitHub</a
+        >
+      </li>
+      <li>
+        <a href="https://www.youtube.com/" target="blank">Canal do YouTube</a>
+      </li>
+      <li>
+        <a href="https://www.cursoemvideo.com/" target="blank"
+          >Site do CursormVideo</a
+        >
+      </li>
+    </ul>
+  </body>
+</html>
